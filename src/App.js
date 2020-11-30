@@ -1,15 +1,14 @@
 import React from "react";
 import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core";
+import Home from './components/Home'
 
 const useStyles = makeStyles({
-  root: {
-    background: "red",
-    height: '100vh'
-  }
+  root: {}
 })
 
 function App() {
   const theme = createMuiTheme({
+    spacing: 4,
     palette: {
       primary: {
         main: '#f44336'
@@ -23,7 +22,7 @@ function App() {
   const classes = useStyles()
   return (
     <ThemeProvider theme={theme}>
-      <div className={classes.root}></div>
+      <Home />
     </ThemeProvider>
   );
 }
