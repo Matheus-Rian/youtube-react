@@ -15,7 +15,7 @@ function App() {
       },
       secondary: {
         main: '#648DAE'
-      }
+      },
     }
   })
 
